@@ -1,3 +1,11 @@
+DIAMOND + CARD ARGs Pipeline
+
+The pipeline sets key thresholds for ARG detection to ensure high-confidence results. The minimum identity (MIN_IDENTITY) is set at 80%, 
+meaning that only alignments with at least 80% sequence identity are considered. The minimum alignment length (MIN_AMINO_ACIDS) is 25 amino acids, 
+which is equivalent to 75 nucleotides, following the standard recommendation of ARGs-OAP to avoid short, unreliable hits. 
+Additionally, the E-value threshold (EVALUE) is set to 1e-7, filtering out matches that are likely to occur by chance.
+
+
 #!/bin/bash
 
 # ==================== CONFIGURATION ====================
