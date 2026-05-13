@@ -1,4 +1,3 @@
-It performs **paired-end ARGs detection using DIAMOND against the CARD database**. It sets key thresholds for high-confidence identification: **minimum identity (`MIN_IDENTITY`) of 80%**, **minimum alignment length (`MIN_AMINO_ACIDS`) of 25 amino acids** (equivalent to 75 nucleotides, following ARGs-OAP recommendations), and an **E-value threshold (`EVALUE`) of 1e-7**. The pipeline automatically initializes directories, checks dependencies, validates the DIAMOND database, processes each sample’s paired-end files, runs DIAMOND BLASTX for both mates, combines results, validates outputs, and generates a detailed summary with total hits, high-confidence hits, average alignment length, and average identity.
 
 ```bash
 #!/bin/bash
